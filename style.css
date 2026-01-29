@@ -1,49 +1,41 @@
 /* General Page Styling */
 body {
-    background-color: #f0f0f0; /* Light grey background */
+    background-color: #add8e6; /* Light blue background to match image */
     font-family: Arial, sans-serif;
 }
 
 /* Header Alignment */
 h1 {
     text-align: center;
-    font-size: 2.5em;
-}
-
-h2 {
-    font-size: 1.8em;
 }
 
 /* 2nd Paragraph Specific Styling */
-/* Uses :nth-of-type(2) to target the second <p> tag */
-p:nth-of-type(2) {
+/* Targets the specific ID used in your index.html */
+#paragraph2 {
     width: 60%;
     margin: 20px auto;
     padding: 15px;
-    border: 2px solid #333;
+    border: 2px solid green; /* Green border to match image */
     line-height: 1.6;
     background-color: #ffffff;
 }
 
 /* 4th and 5th Paragraph Colors */
-p:nth-of-type(4) {
-    color: #2c3e50;
-}
-
-p:nth-of-type(5) {
-    color: #e67e22;
+/* Targets the .blue class used in your index.html */
+.blue {
+    background-color: #00008b; /* Dark blue background */
+    color: #ffffff; /* White text for visibility */
+    padding: 10px;
 }
 
 /* Links Styling */
 a {
-    color: #2980b9;
-    text-decoration: none;
+    color: #0000ff;
 }
 
-/* Target the w3schools link specifically if it's outside the list */
-p a {
-    color: #c0392b; /* Different color than list links */
-    font-weight: bold;
+/* Target the w3schools link to be a different color */
+section p a {
+    color: #ff0000; /* Red link for W3Schools as seen in image */
 }
 
 /* List Items with Two Digits (01, 02, etc.) */
@@ -59,16 +51,15 @@ table {
 }
 
 table, th, td {
-    border: 1px solid black; /* Applies to all cells */
+    border: 1px solid black;
 }
 
 th {
-    background-color: #34495e;
-    color: white;
+    background-color: #d3d3d3; /* Grey background for header */
     padding: 10px;
 }
 
 td {
-    background-color: #ecf0f1;
+    background-color: #ffffff; /* White background for cells */
     padding: 8px;
 }
